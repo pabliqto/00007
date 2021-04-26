@@ -1,0 +1,68 @@
+
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>NWD</title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+
+<script>
+
+</script>
+</head>
+
+<body>
+	
+	<h1>Największy wspólny dzielnik liczb a i b</h1>
+
+	<h2>Schemat blokowy</h2>
+	<img id="img" src="schemat.JPG"></img>
+	<h2>Kod C++</h2>
+<div id="jaj"><code>#include &lt;iostream&gt <br>
+
+	using namespace std;<br>
+	
+	int main()<br>
+	{<br>
+	   int a,b;<br>
+	   cin >> a >> b;<br>
+	   while(a!=b)<br>
+		if(a>b) a -=b;<br>
+	   else b-=a;<br>
+	
+	   cout << a;<br>
+		return 0;<br>
+	}</code></div>
+		<h2>Kod Python</h2>
+		<div id="jaj"><code>a = int(input())<br>
+			b = int(input())<br>
+			def nwd(a,b):<br>
+				while b!=0:<br>
+					r=a%b<br>
+					a=b<br>
+					b=r<br>
+				return a<br>
+			print(nwd(a,b))<br>
+			</code></div>
+		<h2>Skrypt JavaScript</h2>
+		<div id="jaj"><code>function NWD(a,b){<br>
+			var q;<br>
+			while (b != 0){<br>
+			  q = a;<br>
+			  a = b;<br>
+			  b = q % b;<br>
+		   }<br>
+		   return a;<br>
+		  }<br></code></div>
+		  <h2>Oblicz NWD</h2>
+		  <div id="p">
+		  <a>Podaj a:</a><input type="number" id="a" value="1">
+		  <a>Podaj b:</a><input type="number" id="b" value="1">
+		  <button onclick="NWD(a,b)">Pokaż</button>
+		<div id="wynik">Wynik: </div>
+		</div>
+</body>
+</html>

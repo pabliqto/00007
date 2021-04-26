@@ -1,0 +1,39 @@
+body
+{
+	color: white;
+	background-color: #404040;
+	font-family: 'Lato', sans-serif;
+
+}
+code
+{
+	padding-right: 100px;
+}
+h2, a, h1
+{
+	text-align: center;
+}
+#img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#p
+{
+	text-align: center;
+}
+#jaj
+{
+padding-left: 45%;
+}
+.keyword{color:rgb(0,0,255);}
+.comment{color:rgb(0,128,0);}
+.pp{color:rgb(0,0,255);}
+
+
+
+
+
+
+
+
